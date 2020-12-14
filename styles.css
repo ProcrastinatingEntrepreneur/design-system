@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap');
 
 :root {
     --paradise-pink: #ee4266ff;
@@ -48,7 +50,8 @@ header ul {
 
 header ul li {
     margin: 20px;
-    color: var(--russian-violet);
+    color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 header img {
@@ -65,4 +68,27 @@ section {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+
+#fonts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#fonts-header {
+    text-align: center;
+    margin: 10px 0 25px 0;
+}
+
+#roboto-condensed {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#noto {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#open-sans {
+    font-family: 'Open Sans Condensed', sans-serif;
 }
