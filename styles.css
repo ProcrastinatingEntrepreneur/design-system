@@ -3,7 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap');
 
 :root {
-    --paradise-pink: #ee4266ff;
+    --paradise-pink: #ee426680;
+    --paradise-pink2: #ee4266ff;
     --russian-violet: #2a1e5cff;
     --sky-blue-crayola: #5adbffff;
     --steel-teal: #5b7b7aff;
@@ -16,7 +17,7 @@
 }
 
 body {
-    background-color: white;
+    background-color: var(--russian-violet);
     height: 100vh;
 }
 
@@ -27,7 +28,7 @@ header {
     background-color: var(--paradise-pink);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);  
-    box-shadow: 0em 0em 30px gray;
+    box-shadow: 0em 0em 30px darkslategray;
     height: 80px;
     padding: 10px 0px 10px 0px;
     margin: 0 auto;
@@ -62,6 +63,10 @@ header img {
 section {
     position: relative;
     top: 8em;
+    background-color: whitesmoke;
+    width: 50%;
+    margin: 0 auto;
+    padding: 50px 30px 50px 30px
 }
 
 #colors {
@@ -74,11 +79,16 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    text-align: center;
 }
 
 #fonts-header {
     text-align: center;
     margin: 10px 0 25px 0;
+}
+
+#font-section {
+    margin-top: 20px;
 }
 
 #roboto-condensed {
@@ -91,4 +101,34 @@ section {
 
 #open-sans {
     font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#russian-violet {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--russian-violet);
+    color: white;
+    width: 25%;
+    height: 10vh;
+}
+
+#paradise-pink {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--paradise-pink2);
+    color: white;
+    width: 25%;
+    height: 10vh;
+}
+
+#colors-header { 
+    text-align: center;
+}
+
+#text-styles {
+    margin-top: 20px;
 }
